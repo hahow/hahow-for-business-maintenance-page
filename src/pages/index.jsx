@@ -13,6 +13,7 @@ export default function Home() {
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
+        height: '100vh',
       }}>
         <img
           src="./img-503.png"
