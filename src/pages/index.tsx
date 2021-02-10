@@ -18,8 +18,9 @@ export default function Home() {
         }}
       >
         <img
+          alt="503"
           src="./img-503.png"
-          srcset="./img-503@2x.png 2x, ./img-503@3x.png 3x"
+          srcSet="./img-503@2x.png 2x, ./img-503@3x.png 3x"
         />
         <div
           style={{
