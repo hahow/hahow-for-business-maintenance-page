@@ -17,7 +17,4 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
   ],
-  siteMetadata: {
-    title: "Hahow for Business | 數位時代潛力人才的高效學習方案",
-  },
 }
