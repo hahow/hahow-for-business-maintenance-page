@@ -1,3 +1,14 @@
+> [!WARNING]
+> **這個 repo 已不是線上維護頁的來源，即將封存，請勿再修改。**
+>
+> 線上維護頁的內容與部署都在 [`hahow/hahow-for-business-terraform`](https://github.com/hahow/hahow-for-business-terraform) 的 `modules/k8s-resources/main.tf`（`# ===== maintenance page =====` 區段）：
+>
+> - **頁面內容**：`maintenance-page` ConfigMap 的 `maintenance.html`，直接寫在 terraform 裡，不是這個 repo 的 build 產物
+> - **提供方式**：`maintenance-page` Deployment 以 `nginx:1.23` 掛載上述 ConfigMap，搭配同名 Service
+> - **開關**：變數 `enable_maintenance_page` 為 `true` 時建立上述 Deployment／Service，並把前端 Ingress 的 backend 從 `frontend` 切到 `maintenance-page`
+>
+> 這個 repo 的最後一次 commit 是 2021-02-10。2023-09 起（terraform `3d01d279df`「feat: change maintenance page html」）維護頁的修改都只在 terraform，沒有回寫到這裡，所以這裡的程式碼與線上內容不同。要修改維護頁，請改 terraform；歷史紀錄可用 `git log -- modules/k8s-resources/main.tf` 查。
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
